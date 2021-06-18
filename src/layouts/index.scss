@@ -1,0 +1,17 @@
+.main-layout-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  font-family: sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri;
+  font-weight: normal;
+  .main-contents-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
