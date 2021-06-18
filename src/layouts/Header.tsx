@@ -1,15 +1,14 @@
 import React from 'react'
 import './Header.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 function Header(): JSX.Element {
   return (
-    <header className="quiz-header">
+    <header className="portfolio-header">
       <div className="header-title">
-        <div className="name">
-          Juwon Chun
-        </div>
         <div className="icons">
-          <div>icons</div>
+          <FontAwesomeIcon icon={faGithub}/>
         </div>
       </div>
     </header>
