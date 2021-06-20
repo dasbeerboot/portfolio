@@ -2,13 +2,12 @@
     position: absolute;
     display: flex;
     top: 5.5rem;
-    right: 25.5%;
-    width: 100%;
+    right: 20%;
+    width: 70%;
     height: 33rem;
     flex-direction: column;
     align-items: flex-end;
     z-index: 1;
-
     span {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 4.5rem;
@@ -21,5 +20,11 @@
         &:hover {
             color:#48bbdfc2;
         }
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .intro {
+        right: 0;
     }
 }
