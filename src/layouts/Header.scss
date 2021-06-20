@@ -18,8 +18,12 @@
     font-weight: 500;
     .icons {
       position: absolute;
-      right: 1.5rem;
+      right: 2%;
       cursor: pointer;
+
+      .git {
+        margin-right: 1rem;
+      }
     }
   }
 }
