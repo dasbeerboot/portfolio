@@ -1,7 +1,6 @@
 import React from 'react'
 import './index.scss'
 import { IIsHover } from '..'
-import { useHistory } from 'react-router-dom'
 
 interface IntroIProps {
     isHover: IIsHover

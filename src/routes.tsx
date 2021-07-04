@@ -1,6 +1,8 @@
 import { RouteConfig } from 'react-router-config'
 import MainLayout from './layouts/index'
+import AboutPage from './pages/about'
 import MainPage from './pages/main/index'
+import WorksPage from './pages/works'
 
 const routes: RouteConfig[] = [
   {
@@ -15,12 +17,12 @@ const routes: RouteConfig[] = [
       {
         path: '/portfolio/about',
         exact: true,
-        component: MainPage,
+        component: AboutPage,
       },
       {
         path: '/portfolio/works',
         exact: true,
-        component: MainPage,
+        component: WorksPage,
       }
     ],
   },
