@@ -3,8 +3,10 @@ import './index.scss'
 import clsx from 'clsx'
 import PhotoBox from '../../components/PhotoBox'
 import Intro from './Intro'
+import { useHistory } from 'react-router-dom'
 
 function MainPage():JSX.Element {
+    const history = useHistory()
     const [isHover, setIsHover] = useState<IIsHover>({
         greet: false, iam: false, name: false
     })
@@ -17,11 +19,18 @@ function MainPage():JSX.Element {
         setIsHover((prev) => ({...prev, [field]: false}))
     }
 
+    const handleGoPage = (field: string) => {
+        history.push(`portfolio/${field}`)
+    }
+
     return(<section className="main-container">
         <article className="main-content">
             <div className="intro-box">
                 <PhotoBox />
-                <Intro isHover={isHover} onMouseEnter={(field: string) => handleMouseEnter(field)} onMouseLeave={(field:string) => handleMouseLeave(field)}/>
+                <Intro
+                    isHover={isHover}
+                    onMouseEnter={(field: string) => handleMouseEnter(field)} onMouseLeave={(field:string) => handleMouseLeave(field)} onGoPage={(field:string) => handleGoPage(field)}
+                />
             </div>
         </article>
     </section>)

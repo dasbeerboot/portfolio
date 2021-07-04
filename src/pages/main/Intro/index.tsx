@@ -1,21 +1,24 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './index.scss'
 import { IIsHover } from '..'
+import { useHistory } from 'react-router-dom'
 
 interface IntroIProps {
     isHover: IIsHover
     onMouseEnter: (field:string) => void
     onMouseLeave: (field:string) => void
+    onGoPage: (field: string) => void
 }
 
 
-function Intro({isHover, onMouseEnter, onMouseLeave}: IntroIProps):JSX.Element {
+function Intro({isHover, onMouseEnter, onMouseLeave, onGoPage}: IntroIProps):JSX.Element {
     return(
         <article className="intro">
             <span className="greet"
             onMouseEnter={() => onMouseEnter("greet")
             }
             onMouseLeave={() => onMouseLeave("greet")}
+            onClick={() => onGoPage('about')}
             >
                 {
                     isHover.greet ?
@@ -27,6 +30,7 @@ function Intro({isHover, onMouseEnter, onMouseLeave}: IntroIProps):JSX.Element {
             onMouseEnter={() => onMouseEnter("iam")
             }
             onMouseLeave={() => onMouseLeave("iam")}
+            onClick={() => onGoPage('works')}
             >
                 {
                     isHover.iam ? 
@@ -38,6 +42,7 @@ function Intro({isHover, onMouseEnter, onMouseLeave}: IntroIProps):JSX.Element {
             onMouseEnter={() => onMouseEnter("name")
             }
             onMouseLeave={() => onMouseLeave("name")}
+            onClick={() => window.open('mailto:juwonchun@gmail.com')}
             >
                 {
                     isHover.name ?

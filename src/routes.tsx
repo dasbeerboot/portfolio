@@ -13,10 +13,15 @@ const routes: RouteConfig[] = [
         component: MainPage,
       },
       {
-        path: '/portfolio/:index',
+        path: '/portfolio/about',
         exact: true,
         component: MainPage,
       },
+      {
+        path: '/portfolio/works',
+        exact: true,
+        component: MainPage,
+      }
     ],
   },
 ]
