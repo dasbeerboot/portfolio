@@ -25,16 +25,14 @@ function MainPage():JSX.Element {
 
     return(<section className="main-container">
         <article className="main-content">
-            <div className="intro-box">
-                <PhotoBox />
-                <Intro
-                    isHover={isHover}
-                    onMouseEnter={(field: string) => handleMouseEnter(field)} onMouseLeave={(field:string) => handleMouseLeave(field)} onGoPage={(field:string) => handleGoPage(field)}
-                />
-            </div>
-            <div className="bio-box">
+            <PhotoBox />
+            <Intro
+                isHover={isHover}
+                onMouseEnter={(field: string) => handleMouseEnter(field)} onMouseLeave={(field:string) => handleMouseLeave(field)} onGoPage={(field:string) => handleGoPage(field)}
+            />
+            {/* <div className="bio-box"> */}
                 <Bio />
-            </div>
+            {/* </div> */}
         </article>
     </section>)
 }
