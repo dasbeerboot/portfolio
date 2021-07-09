@@ -28,3 +28,11 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .bio {
+        p {
+            font-size: 1rem;
+        }
+    }
+}
