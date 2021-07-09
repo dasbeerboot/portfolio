@@ -6,21 +6,21 @@ import WorksPage from './pages/works'
 
 const routes: RouteConfig[] = [
   {
-    route: 'portfolio',
+    route: '*',
     component: MainLayout,
     routes: [
       {
-        path: '/',
+        path: '/portfolio',
         exact: true,
         component: MainPage,
       },
       {
-        path: '/about',
+        path: '/portfolio/about',
         exact: true,
         component: AboutPage,
       },
       {
-        path: '/works',
+        path: '/portfolio/works',
         exact: true,
         component: WorksPage,
       }

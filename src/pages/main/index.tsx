@@ -19,7 +19,7 @@ function MainPage():JSX.Element {
     }
 
     const handleGoPage = (field: string) => {
-        history.push(`/${field}`)
+        history.push(`/portfolio/${field}`)
     }
 
     return(<section className="main-container">
