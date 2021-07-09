@@ -30,9 +30,7 @@ function MainPage():JSX.Element {
                 isHover={isHover}
                 onMouseEnter={(field: string) => handleMouseEnter(field)} onMouseLeave={(field:string) => handleMouseLeave(field)} onGoPage={(field:string) => handleGoPage(field)}
             />
-            {/* <div className="bio-box"> */}
-                <Bio />
-            {/* </div> */}
+            <Bio />
         </article>
     </section>)
 }

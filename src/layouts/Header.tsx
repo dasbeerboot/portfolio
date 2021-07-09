@@ -2,19 +2,25 @@ import React from 'react'
 import './Header.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faHome} from '@fortawesome/free-solid-svg-icons'
+import { useHistory } from 'react-router-dom'
 
 function Header(): JSX.Element {
+  const history = useHistory()
+
   const handleGoPage = (field: string) => {
     if (field === 'git') {
       window.open('https://github.com/dasbeerboot', '_blank')
-    }else {
+    }else if (field === 'email') {
       window.open('mailto:juwonchun@gmail.com')
+    } else {
+      history.push('/portfolio')
     }
   }
   return (
     <header className="portfolio-header">
       <div className="header-title">
+        <FontAwesomeIcon className="home" icon={faHome} onClick={() => handleGoPage('/')}/>
         <div className="icons">
           <FontAwesomeIcon className="git" icon={faGithub} onClick={() => handleGoPage('git')}/>
           <FontAwesomeIcon className="email" icon={faEnvelope} onClick={() => handleGoPage('email')}/>

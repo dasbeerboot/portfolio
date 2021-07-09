@@ -4,7 +4,9 @@ import './index.scss'
 function AboutPage(): JSX.Element {
     return (
         <section className="about-container">
-            어바웃 히히
+            <article className="about-content">
+                어바웃인데요
+            </article>
         </section>
     )
 }
