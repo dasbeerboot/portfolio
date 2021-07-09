@@ -1,8 +1,30 @@
 .about-container {
+    position: relative;
     width: 100%;
     height: 100%;
-    display: flex;
     .about-content {
+        width: 100%;
+        height: 100%;
+        display: block;
         margin: 0 auto;
+
+        .bio {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            font-size: 1.5rem;
+            line-height: 1.5;
+            margin-top: 5rem;
+            padding: 0 1.5rem;
+        }
+
+        .gummy-bear-is-the-best {
+            width: 100%;
+            text-align: right;
+            margin-top: 5rem;
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: #684793;
+        }
     }
 }
