@@ -3,7 +3,6 @@ import './index.scss'
 import PhotoBox from '../../components/PhotoBox'
 import Intro from './Intro'
 import { useHistory } from 'react-router-dom'
-import Bio from './bio'
 
 function MainPage():JSX.Element {
     const history = useHistory()
@@ -30,7 +29,6 @@ function MainPage():JSX.Element {
                 isHover={isHover}
                 onMouseEnter={(field: string) => handleMouseEnter(field)} onMouseLeave={(field:string) => handleMouseLeave(field)} onGoPage={(field:string) => handleGoPage(field)}
             />
-            <Bio />
         </article>
     </section>)
 }

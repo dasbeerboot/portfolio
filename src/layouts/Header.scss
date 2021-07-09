@@ -2,7 +2,6 @@
   position: sticky;
   top:0;
   display: flex;
-  justify-content: space-between;
   width: 100%;
   height: 3rem;
   line-height: 3rem;
@@ -12,22 +11,20 @@
     position: relative;
     width: 100%;
     display: flex;
+    justify-content: space-between;
     padding: 0 1.5rem;
     color: #2c2b2bd8;
     font-size: 1.5rem;
     font-weight: 500;
 
-    .home {
-      cursor: pointer;
-    }
     .icons {
-      position: absolute;
-      right: 2%;
-      cursor: pointer;
-
       .git {
         margin-right: 1rem;
       }
+    }
+
+    svg {
+      cursor: pointer;
     }
   }
 }

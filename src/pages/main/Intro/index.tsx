@@ -12,43 +12,45 @@ interface IntroIProps {
 
 function Intro({isHover, onMouseEnter, onMouseLeave, onGoPage}: IntroIProps):JSX.Element {
     return(
-        <article className="intro">
-            <span className="greet"
-            onMouseEnter={() => onMouseEnter("greet")
-            }
-            onMouseLeave={() => onMouseLeave("greet")}
-            onClick={() => onGoPage('about')}
-            >
-                {
-                    isHover.greet ?
-                    'About'
-                    : 'Hello.'
+        <article className="intro-container">
+            <div className="intro">
+                <span className="greet"
+                onMouseEnter={() => onMouseEnter("greet")
                 }
-            </span>
-            <span className="iam"
-            onMouseEnter={() => onMouseEnter("iam")
-            }
-            onMouseLeave={() => onMouseLeave("iam")}
-            onClick={() => onGoPage('works')}
-            >
-                {
-                    isHover.iam ? 
-                    'Works' 
-                    : 'I am'
+                onMouseLeave={() => onMouseLeave("greet")}
+                onClick={() => onGoPage('about')}
+                >
+                    {
+                        isHover.greet ?
+                        'About'
+                        : 'Hello.'
+                    }
+                </span>
+                <span className="iam"
+                onMouseEnter={() => onMouseEnter("iam")
                 }
-            </span>
-            <span className="name"
-            onMouseEnter={() => onMouseEnter("name")
-            }
-            onMouseLeave={() => onMouseLeave("name")}
-            onClick={() => window.open('mailto:juwonchun@gmail.com')}
-            >
-                {
-                    isHover.name ?
-                    'Contact'
-                    : 'Juwon'
+                onMouseLeave={() => onMouseLeave("iam")}
+                onClick={() => onGoPage('works')}
+                >
+                    {
+                        isHover.iam ? 
+                        'Works' 
+                        : 'I am'
+                    }
+                </span>
+                <span className="name"
+                onMouseEnter={() => onMouseEnter("name")
                 }
-            </span>
+                onMouseLeave={() => onMouseLeave("name")}
+                onClick={() => window.open('mailto:juwonchun@gmail.com')}
+                >
+                    {
+                        isHover.name ?
+                        'Contact'
+                        : 'Juwon'
+                    }
+                </span>
+            </div>
         </article>
     )
 }

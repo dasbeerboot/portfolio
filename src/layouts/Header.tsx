@@ -20,7 +20,9 @@ function Header(): JSX.Element {
   return (
     <header className="portfolio-header">
       <div className="header-title">
-        <FontAwesomeIcon className="home" icon={faHome} onClick={() => handleGoPage('/')}/>
+        <div className="home">
+          <FontAwesomeIcon className="home" icon={faHome} onClick={() => handleGoPage('/')}/>
+        </div>
         <div className="icons">
           <FontAwesomeIcon className="git" icon={faGithub} onClick={() => handleGoPage('git')}/>
           <FontAwesomeIcon className="email" icon={faEnvelope} onClick={() => handleGoPage('email')}/>
