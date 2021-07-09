@@ -14,7 +14,7 @@ function Header(): JSX.Element {
     }else if (field === 'email') {
       window.open('mailto:juwonchun@gmail.com')
     } else {
-      history.push('/portfolio')
+      history.goBack()
     }
   }
   return (

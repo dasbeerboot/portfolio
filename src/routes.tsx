@@ -10,17 +10,17 @@ const routes: RouteConfig[] = [
     component: MainLayout,
     routes: [
       {
-        path: '/portfolio',
+        path: '/',
         exact: true,
         component: MainPage,
       },
       {
-        path: '/portfolio/about',
+        path: '/about',
         exact: true,
         component: AboutPage,
       },
       {
-        path: '/portfolio/works',
+        path: '/works',
         exact: true,
         component: WorksPage,
       }
