@@ -6,7 +6,7 @@ import WorksPage from './pages/works'
 
 const routes: RouteConfig[] = [
   {
-    route: '*',
+    route: 'portfolio',
     component: MainLayout,
     routes: [
       {
