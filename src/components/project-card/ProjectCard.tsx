@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./ProjectCard.scss";
 import ProjectDefault from "../../assets/imgs/project-card/project-default.svg";
-import Test from "../../assets/imgs/project-card/codi/codi1.png";
 
 export interface ProjectCardIProps {
   title: string;
@@ -13,12 +12,11 @@ export interface ProjectCardIProps {
 
 function ProjectCard({
   title,
-  projectName,
   description,
+  stacks,
   thumbnail
 }: ProjectCardIProps): JSX.Element {
   const [isHover, setIsHover] = useState(false);
-  const [isProjectModalOpen, setIsProjectModalOpen] = useState(false);
 
   const renderDefault = () => {
     return (
@@ -34,10 +32,27 @@ function ProjectCard({
   const renderHover = () => {
     return (
       <div className="hover-card">
-        <div>
-          <span>{title}</span>
+        <div className="img-wrapper">
+          <img
+            className="project-img"
+            src={thumbnail ? thumbnail : ProjectDefault}
+          />
         </div>
-        <div>{description}</div>
+        <div className="hover-content">
+          <div className="content-wrapper">
+            <div className="title">{title}</div>
+            <div className="description">{description}</div>
+            <div className="stacks">
+              {stacks.map((item, idx) => {
+                if (idx === stacks.length - 1) {
+                  return `#${item}`;
+                } else {
+                  return `#${item}, `;
+                }
+              })}
+            </div>
+          </div>
+        </div>
       </div>
     );
   };
@@ -46,6 +61,7 @@ function ProjectCard({
       className="card-container"
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
+      onTouchEnd={() => setIsHover(!isHover)}
     >
       {isHover ? renderHover() : renderDefault()}
     </div>
