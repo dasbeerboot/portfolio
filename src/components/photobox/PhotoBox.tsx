@@ -1,6 +1,6 @@
 import React from 'react'
 import './PhotoBox.scss'
-import ProfilePic from '../assets/profile-pic.png'
+import ProfilePic from '../../assets/imgs/profile-pic.png'
 
 function PhotoBox():JSX.Element {
     return (

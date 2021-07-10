@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './index.scss'
-import PhotoBox from '../../components/PhotoBox'
+import PhotoBox from '../../components/photobox/PhotoBox'
 import Intro from './Intro'
 import { useHistory } from 'react-router-dom'
 
