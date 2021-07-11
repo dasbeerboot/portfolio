@@ -1,0 +1,11 @@
+.img-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .imgs {
+    object-fit: contain;
+    margin: 1rem 0;
+  }
+}
