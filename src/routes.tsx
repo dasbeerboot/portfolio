@@ -1,31 +1,31 @@
-import { RouteConfig } from 'react-router-config'
-import MainLayout from './layouts/index'
-import AboutPage from './pages/about'
-import MainPage from './pages/main/index'
-import WorksPage from './pages/works'
+import { RouteConfig } from "react-router-config";
+import MainLayout from "./layouts/index";
+import AboutPage from "./pages/about";
+import MainPage from "./pages/main/index";
+import WorksPage from "./pages/works";
 
 const routes: RouteConfig[] = [
   {
-    route: '*',
+    route: "*",
     component: MainLayout,
     routes: [
       {
-        path: '/portfolio',
+        path: "/",
         exact: true,
-        component: MainPage,
+        component: MainPage
       },
       {
-        path: '/portfolio/about',
+        path: "/about",
         exact: true,
-        component: AboutPage,
+        component: AboutPage
       },
       {
-        path: '/portfolio/works',
+        path: "/works",
         exact: true,
-        component: WorksPage,
+        component: WorksPage
       }
-    ],
-  },
-]
+    ]
+  }
+];
 
-export default routes
+export default routes;
