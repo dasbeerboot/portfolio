@@ -1,28 +1,28 @@
-import React, { useState } from "react";
-import "./index.scss";
-import PhotoBox from "../../components/photobox/PhotoBox";
-import Intro from "./Intro";
-import { useHistory } from "react-router-dom";
+import React, { useState } from 'react'
+import './index.scss'
+import PhotoBox from '../../components/photobox/PhotoBox'
+import Intro from './Intro'
+import { useHistory } from 'react-router-dom'
 
 function MainPage(): JSX.Element {
-  const history = useHistory();
+  const history = useHistory()
   const [isHover, setIsHover] = useState<IIsHover>({
     greet: false,
     iam: false,
-    name: false
-  });
+    name: false,
+  })
 
   const handleMouseEnter = (field: string) => {
-    setIsHover(prev => ({ ...prev, [field]: true }));
-  };
+    setIsHover((prev) => ({ ...prev, [field]: true }))
+  }
 
   const handleMouseLeave = (field: string) => {
-    setIsHover(prev => ({ ...prev, [field]: false }));
-  };
+    setIsHover((prev) => ({ ...prev, [field]: false }))
+  }
 
   const handleGoPage = (field: string) => {
-    history.push(`/${field}`);
-  };
+    history.push(`/${field}`)
+  }
 
   return (
     <section className="main-container">
@@ -36,13 +36,13 @@ function MainPage(): JSX.Element {
         />
       </article>
     </section>
-  );
+  )
 }
 
 export interface IIsHover {
-  greet: boolean;
-  iam: boolean;
-  name: boolean;
+  greet: boolean
+  iam: boolean
+  name: boolean
 }
 
-export default MainPage;
+export default MainPage

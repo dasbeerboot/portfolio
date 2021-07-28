@@ -8,7 +8,7 @@ function MainLayout({ route }: RouteConfig): JSX.Element {
     <main className="main-layout-container">
       <Header />
       <section className="main-contents-container">
-      <Suspense fallback={<div>loading</div>}>{renderRoutes(route.routes)}</Suspense>
+        <Suspense fallback={<div>loading</div>}>{renderRoutes(route.routes)}</Suspense>
       </section>
     </main>
   )
