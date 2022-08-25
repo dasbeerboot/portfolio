@@ -1,8 +1,11 @@
 import React from 'react'
 import './ProjectModal.scss'
-import * as CodiImgs from '../../assets/imgs/project-card/codi/index'
-import * as StorybookImgs from '../../assets/imgs/project-card/storybook/index'
-import CodeSketchImg from '../../assets/imgs/project-card/codesketch/codesketch1.png'
+import * as CodiImgs from '@assets/imgs/project-card/codi'
+import * as StorybookImgs from '@assets/imgs/project-card/storybook'
+import * as TrippyImgs from '@assets/imgs/project-card/trippy'
+import * as TrippyArtImgs from '@assets/imgs/project-card/trippy-art'
+import CodeSketchImg from '@assets/imgs/project-card/codesketch/codesketch1.png'
+import AngelleagueImg from '@assets/imgs/project-card/angelleague/angelleague1.png'
 import { ClickAwayListener, Dialog } from '@material-ui/core'
 
 export interface ProjectModalIProps {
@@ -14,6 +17,33 @@ export interface ProjectModalIProps {
 function ProjectModal({ projectName, isOpen, closeModal }: ProjectModalIProps): JSX.Element {
   const renderImgs = () => {
     switch (projectName) {
+      case 'trippy':
+        return (
+          <>
+            <img className="imgs" src={TrippyImgs.Trippy1} />
+            <img className="imgs" src={TrippyImgs.Trippy2} />
+            <img className="imgs" src={TrippyImgs.Trippy3} />
+            <img className="imgs" src={TrippyImgs.Trippy4} />
+            <img className="imgs" src={TrippyImgs.Trippy5} />
+          </>
+        )
+      case 'trippy-art':
+      return (
+        <>
+          <img className="imgs" src={TrippyArtImgs.TrippyArt1} />
+          <img className="imgs" src={TrippyArtImgs.TrippyArt2} />
+          <img className="imgs" src={TrippyArtImgs.TrippyArt3} />
+          <img className="imgs" src={TrippyArtImgs.TrippyArt4} />
+        </>
+      )
+
+      case 'angelleague':
+      return (
+        <>
+          <img className="imgs" src={AngelleagueImg} />
+        </>
+      )
+
       case 'codi':
         return (
           <>

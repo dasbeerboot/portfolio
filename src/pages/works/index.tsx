@@ -1,12 +1,14 @@
 import React from "react"
 import ProjectCard, {
   ProjectCardIProps,
-} from "../../components/project-card/ProjectCard"
+} from "@components/project-card/ProjectCard"
 import "./index.scss";
-import {Codi1} from '../../assets/imgs/project-card/codi'
-import CodeSketch from '../../assets/imgs/project-card/codesketch/codesketch1.png'
-import {Storybook1} from '../../assets/imgs/project-card/storybook'
-import { Trippy1 } from "@assets/imgs/project-card/trippy"
+import {Codi1} from '@assets/imgs/project-card/codi'
+import CodeSketch from '@assets/imgs/project-card/codesketch/codesketch1.png'
+import {Storybook1} from '@assets/imgs/project-card/storybook'
+import { Trippy1 } from '@assets/imgs/project-card/trippy'
+import { TrippyArt1 } from '@assets/imgs/project-card/trippy-art'
+import Angelleague from '@assets/imgs/project-card/angelleague/angelleague1.png'
 
 
 const projectData: ProjectCardIProps[] = [
@@ -15,8 +17,24 @@ const projectData: ProjectCardIProps[] = [
     projectName: "trippy",
     description:
       "엔젤리그의 Mobile First Web3 커뮤니티인 트리피와 트리피 아트(전 엔젤리그 팩토리) 프론트엔드를 개발중입니다. 지갑로그인을 포함한 클레이튼, 이더리움 스마트컨트랙 및 지갑 연동이 흥미로워 해당 파트를 도맡아 즐겁게 개발 및 유지보수했습니다. 프론트엔드 기여도는 50% 입니다.",
-    stacks: ["Vue3", "Nuxt3", "Quasar"],
+    stacks: ["Vue3", "Nuxt", "Quasar"],
     thumbnail: Trippy1,
+  },
+  {
+    title: "TRIPPY ART",
+    projectName: "trippy-art",
+    description:
+      "엔젤리그의 Mobile First Web3 커뮤니티인 트리피와 트리피 아트(전 엔젤리그 팩토리) 프론트엔드를 개발했습니다.",
+    stacks: ["Vue3", "Nuxt", "Quasar"],
+    thumbnail: TrippyArt1,
+  },
+  {
+    title: "엔젤리그",
+    projectName: "angelleague",
+    description:
+    "엔젤리그의 신규 사업인 미술품거래와 NFT 프로덕트의 프론트엔드를 Vue3,  Quasar 를 이용하여 하이브리드 앱으로 개발하여 런칭하고 유지보수 및 운영했습니다.",
+    stacks: ["Vue3", "Nuxt", "Quasar"],
+    thumbnail: Angelleague,
   },
   {
     title: "Codi-AI LMS",
