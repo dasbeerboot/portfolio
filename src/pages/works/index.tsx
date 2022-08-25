@@ -6,8 +6,8 @@ import "./index.scss";
 import {Codi1} from '../../assets/imgs/project-card/codi'
 import CodeSketch from '../../assets/imgs/project-card/codesketch/codesketch1.png'
 import {Storybook1} from '../../assets/imgs/project-card/storybook'
-// import Trippy1 from "../assets/imgs/project-card/trippy/trippy1.png"
-import { Trippy1 } from "../../assets/imgs/project-card/trippy"
+import { Trippy1 } from "@assets/imgs/project-card/trippy"
+
 
 const projectData: ProjectCardIProps[] = [
   {

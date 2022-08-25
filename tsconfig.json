@@ -1,4 +1,5 @@
 {
+  "extends": "./tsconfig.extend.json",
   "compilerOptions": {
     "target": "es6",
     "lib": [
@@ -29,6 +30,5 @@
     "build",
     "typings",
     "lib"
-  ],
-  "extends": "./tsconfig.paths.json"
+  ]
 }
