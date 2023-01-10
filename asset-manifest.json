@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.8f528089.chunk.css",
+    "main.js": "/portfolio/static/js/main.4d3de333.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.4d3de333.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.a9f76519.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.a9f76519.js.map",
+    "static/js/2.a15cb669.chunk.js": "/portfolio/static/js/2.a15cb669.chunk.js",
+    "static/js/2.a15cb669.chunk.js.map": "/portfolio/static/js/2.a15cb669.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.8f528089.chunk.css.map": "/portfolio/static/css/main.8f528089.chunk.css.map",
+    "static/js/2.a15cb669.chunk.js.LICENSE.txt": "/portfolio/static/js/2.a15cb669.chunk.js.LICENSE.txt",
+    "static/media/angelleague1.586e7287.png": "/portfolio/static/media/angelleague1.586e7287.png",
+    "static/media/codesketch1.e20754c2.png": "/portfolio/static/media/codesketch1.e20754c2.png",
+    "static/media/codi1.b228dde6.png": "/portfolio/static/media/codi1.b228dde6.png",
+    "static/media/codi2.ba09abe5.png": "/portfolio/static/media/codi2.ba09abe5.png",
+    "static/media/codi3.a09fc98b.png": "/portfolio/static/media/codi3.a09fc98b.png",
+    "static/media/codi4.eb1ad1b4.png": "/portfolio/static/media/codi4.eb1ad1b4.png",
+    "static/media/codi5.7dc68cad.png": "/portfolio/static/media/codi5.7dc68cad.png",
+    "static/media/profile-pic.9ae4f11d.png": "/portfolio/static/media/profile-pic.9ae4f11d.png",
+    "static/media/project-default.0a695238.svg": "/portfolio/static/media/project-default.0a695238.svg",
+    "static/media/storybook1.fa0b9beb.png": "/portfolio/static/media/storybook1.fa0b9beb.png",
+    "static/media/storybook2.245708a6.png": "/portfolio/static/media/storybook2.245708a6.png",
+    "static/media/storybook3.cd7011c4.png": "/portfolio/static/media/storybook3.cd7011c4.png",
+    "static/media/storybook4.b1506dc9.png": "/portfolio/static/media/storybook4.b1506dc9.png",
+    "static/media/trippy-art1.0a4782b3.png": "/portfolio/static/media/trippy-art1.0a4782b3.png",
+    "static/media/trippy-art2.fe61961e.png": "/portfolio/static/media/trippy-art2.fe61961e.png",
+    "static/media/trippy-art3.64689f8e.png": "/portfolio/static/media/trippy-art3.64689f8e.png",
+    "static/media/trippy-art4.0066c6fe.png": "/portfolio/static/media/trippy-art4.0066c6fe.png",
+    "static/media/trippy1.b8ef4293.png": "/portfolio/static/media/trippy1.b8ef4293.png",
+    "static/media/trippy2.820c3c26.png": "/portfolio/static/media/trippy2.820c3c26.png",
+    "static/media/trippy3.746c0cc1.png": "/portfolio/static/media/trippy3.746c0cc1.png",
+    "static/media/trippy4.a802ab54.png": "/portfolio/static/media/trippy4.a802ab54.png",
+    "static/media/trippy5.bcff1ae8.png": "/portfolio/static/media/trippy5.bcff1ae8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a9f76519.js",
+    "static/js/2.a15cb669.chunk.js",
+    "static/css/main.8f528089.chunk.css",
+    "static/js/main.4d3de333.chunk.js"
+  ]
+}
